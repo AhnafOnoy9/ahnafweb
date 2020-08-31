@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ahnaf Onoy</title>
+	<link rel="stylesheet" type="text/css" href="more.CSS.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body>
+
+<header>
+	<div class="header_menu">
+		<div class="logo"> 
+			<img src="logo.JPEG" alt="img">
+		</div>
+		
+	</div>
+	<video autoplay loop class="video" muted plays-inline>
+
+		<source src="images/video.mp4" type="video/mp4">
+		 </video>
+	<div class="header_menu">
+		<div class="logo"> 
+			
+		</div>
+		
+	</div>
+
+	<div class="header_content">
+		<h2>Ahnaf Onoy / WEB DEVELOPER</h2>
+		<h1>Ahnaf Onoy</h1>
+		
+		<button><a href="form/index.HTML">
+			HIRE ME!
+		</a></button>
+
+		<button><a href="eror/index.HTML">
+			SHOP
+		</a></button>
+		<button><a href="#services">
+			SCROLL
+		</a></button>
+		
+		<h3>Please scroll Down</h3>
+	</div>
+</header>
+<!--More-->
+<section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">MO<span>R</span>E</h1>
+        
+      </div>
+      <div class="service-bottom">
+   
+          
+        <div class="service-item2">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>MORE</h2>
+          <p>Our SIte have a lot of feature that can not be described by writing.Give an order and find out.</p>
+		 <h3><span>PAYMENT AND OTHERS:</span></h3>
+		 <p>We Accept payment through<span> BKASH </span> .Once you place an order by going on <Span>HIRE ME!</span> You will get the full payment instruction in an email sent to you.NOTE:Send payment to bkash account Number mentioned in email.Once your order is confirmed you will get an email with the payment instructions.Then,After Paying,all you have to do is reply to email with the <span>last 3 digits of the number by which you paid</span> and <span>Transaction Id.Provided By BKASH</span>Then I will start working on your project and build you your dream Website</p>		
+		</div>
+      </div>
+    </div>
+  </section>
+	<!--end-->
+	<!-- Footer -->
+	<section id="footer">
+		<div class="footer-container">
+		  <div class="brand"><h1><span>A</span>hnaf <span>O</span>noy</h1></div>
+		  <h2>Your Complete Web And Solution</h2>
+		  <div class="social-icon">
+			<div class="social-item">
+				<a href="https://www.youtube.com/channel/UCGhQ4_URD-sxLQ_ngLRQTyQ"><img src="https://img.icons8.com/bubbles/100/000000/youtube.png"/></a>
+			  </div>
+			
+			<div class="social-item">
+			  <a href="https://instagram.com/apex_ahnaf?igshid=fh0ur3reqcez"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+			</div>
+			<div class="social-item">
+			  <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+			</div>
+			<div class="social-item">
+				<a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+			  </div>
+		  </div>
+		  <p>Copyright © 2020 Ahnaf Onoy. All rights reserved</p>
+		</div>
+	  </section>
+	  <!-- End Footer -->
+	  
+</body>
+</html>
+<style>
+	*{
+	padding: 0;
+	margin: 0;
+}
+
+
+.logo{
+	background: rgba(0, 0, 100,0.4);
+	height: 100vh;
+	width: 100vmax;
+}
+.video{
+position: absolute;
+right: 0;
+bottom: 0;
+min-width: 100%;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url('');
+	background-size: contain;
+	font-family: 'Dosis', sans-serif;
+}
+
+.header_menu{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+/*	border:1px solid red;*/
+}
+
+
+
+.logo img{
+	height: 100vh;
+}
+
+
+
+.header_content{
+	text-transform: uppercase;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color:rgba(255, 255, 255, .8);
+	transform: translate(-50%, -50%);
+	text-align: center;
+/*	border:1px solid red;*/
+}
+
+.header_content h2{
+	margin-bottom: 50px;
+	font-size: 17px;
+	font-weight: 500;
+	letter-spacing: 0.3em;
+}
+
+.header_content h1{
+	margin-bottom: 50px;
+	font-size: 50px;
+	font-weight: 500;
+	letter-spacing: 0.7em;
+}
+
+.header_content button{
+	height: auto;
+	padding:8px 37px;
+	color:#fff;
+	font-size: 12px;
+	background-color: transparent;
+	margin-right: 20px;
+}
+
+.header_content button a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.header_content button:hover{
+	background-color: orange;
+	border:1px solid white;
+}
+@media(min-aspect-ratio:16/9)
+{
+.video-bacground{
+	width: 100%;
+	height: auto;
+}
+
+}
+@media(max-aspect-ratio:16/9)
+{
+.video-bacground{
+	width: auto;
+	height: 100%;
+}
+
+}
+/* Services Section */
+#services .services {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#services .service-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#services .service-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#services .service-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(images/pa.PNG);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#services .service-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: .9;
+	z-index: -1;
+}
+#services .service-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#services .service-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#services .service-item p {
+	color: white;
+	text-align: left;
+}
+/* End Services Section */
+#services .service-item2 {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(images/pa.PNG);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.service-item2 p{
+	font-size: x-large;
+	font-weight: 600;
+	text-align: center;
+	position: relative;
+	color: rgb(0, 0, 0);
+}
+.service-item2 h2{
+	font-weight: 800;
+	font-size: xx-large;
+}
+.header_content h3{
+	color: black;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	font-size:  larger;
+	border-radius: 30px;
+}
+/* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	text-align: center;
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: .1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+	text-align: center;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+	text-align: center;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: .3s ease filter;
+	position: absolute;
+	text-align: center;
+	margin-left: 500px;
+	letter-spacing: 4px;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+	text-align: center;
+}
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+	text-align: center;
+}
+/* End Footer */
+.brand .span{
+	color: rgb(255, 0, 0);
+}
+.service-item2 span{
+	color: rgb(255, 0, 0);
+	cursor: pointer;
+}
+.service-top span{
+	color: rgb(233, 85, 0);
+	cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	h1.section-title {
+		font-size: 6rem;
+	}
+}
+</style>
