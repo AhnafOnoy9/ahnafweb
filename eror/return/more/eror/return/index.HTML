@@ -71,8 +71,8 @@
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
           <h2>Website UI Design</h2>
-          <h3>2-5$ = <span>160-400 TAKA</span></h3>
-          <p>Starting from 2$=160 TAKA.                     This includes a 1 page awesome web UI design.this includes <span>NEOMORPHISM UI</span> with linkable social icon.You will get source html css code.web host possible if requested.</p>
+          <h3> <span>160-400 TAKA</span></h3>
+          <p>Starting from 160 TAKA.                     This includes a 1 page awesome web UI design.this includes <span>NEOMORPHISM UI</span> with linkable social icon.You will get source html css code.web host possible if requested.</p>
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
@@ -223,7 +223,33 @@
     </div>
   </section>
   <!-- End Footer -->
-  <script src="./htmlcss/app.js"></script>
+    <script>
+	  const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const header = document.querySelector('.header.container');
+
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('active');
+	mobile_menu.classList.toggle('active');
+});
+
+document.addEventListener('scroll', () => {
+	var scroll_position = window.scrollY;
+	if (scroll_position > 250) {
+		header.style.backgroundColor = '#29323c';
+	} else {
+		header.style.backgroundColor = 'transparent';
+	}
+});
+
+menu_item.forEach((item) => {
+	item.addEventListener('click', () => {
+		hamburger.classList.toggle('active');
+		mobile_menu.classList.toggle('active');
+	});
+});
+  </script>
 </body>
 </html>
 <style>
